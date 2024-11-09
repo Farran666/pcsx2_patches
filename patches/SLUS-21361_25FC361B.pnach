@@ -1,13 +1,9 @@
-gametitle=Devil May Cry 3 - Special Edition (SLUS_21361)
-
-[Widescreen 16:9]
-gsaspectratio=16:9
-author=No.47
-patch=1,EE,21D0DEA0,word,3F400000 //horizontal fov
-patch=1,EE,206A2870,word,3F400000 //hud fix, pause screen fix
-
-//FMV's fix
-patch=1,EE,0023279c,word,240301aa //intro / demo
-patch=1,EE,002e52ec,word,240801aa //cutscenes
-
-
+[Health doesn't decrease + 1 hit kill]
+patch=1,EE,002F1E00,word,0803FE80
+patch=1,EE,002F1E04,word,00000000
+patch=1,EE,000FFA00,word,C4400004
+patch=1,EE,000FFA04,word,3C1B017E
+patch=1,EE,000FFA08,word,377B3510
+patch=1,EE,000FFA0C,word,13620002
+patch=1,EE,000FFA14,word,46000001
+patch=1,EE,000FFA18,word,080BC781
